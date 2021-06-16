@@ -1,4 +1,4 @@
-package com.amazon.ata.comparable_comparator_sort.prework;
+package com.amazon.ata.comparable_comparator_sort;
 
 import org.junit.jupiter.api.Test;
 

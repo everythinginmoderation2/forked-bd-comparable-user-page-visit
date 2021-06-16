@@ -1,4 +1,4 @@
-package com.amazon.ata.comparable_comparator_sort.prework;
+package com.amazon.ata.comparable_comparator_sort;
 
 /**
  * This class contains statistics for a particular user page view, defined by its userId and page. We create instances
