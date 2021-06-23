@@ -1,10 +1,6 @@
 ## Comparable and using sort() Pre-work
 
-**Branch name: sorting-prework**
-
-**RDE workflows:**
-
-* `comparable-and-using-sort-prework`
+**GitHub repo:** [ebd-comparators-using-sort-user-page-visit](https://github.com/LambdaSchool/ebd-comparators-using-sort-user-page-visit)
 
 ### Read (5 min)
 
@@ -116,8 +112,8 @@ ID and page as `UserPageVisitAggregator` expects.
 Implement that method according to its documentation, the run the `UserPageVisitGrouperTest` and
 `UserPageVisitAggregatorTest` through IntelliJ. 
 
-Finally, run the `rde wflow run comparable-and-using-sort-prework` command from your workspace. If everything passes,
+Finally, run the `./gradlew -q clean :test` command from your command line. If everything passes,
 your job here is done!
 
 **Doneness checklist:**
-- The `comparable-and-using-sort-prework` RDE workflow passes
+- The `./gradlew -q clean :test` command passes
