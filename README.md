@@ -2,9 +2,9 @@
 
 **GitHub repo:** [ebd-comparators-using-sort-user-page-visit](https://github.com/LambdaSchool/ebd-comparators-using-sort-user-page-visit)
 
-### Read (5 min)
+## Read (5 min)
 
-#### Introduction to data aggregation
+### Introduction to data aggregation
 
 Data aggregation is any process in which information is gathered and expressed in a summary form for purposes such as
 statistical analysis. One of the main benefits of data aggregation is reducing the amount of data that needs to be
@@ -16,7 +16,7 @@ deviation, min and max age, number of people in each of the age groups and so on
 requires much less space, anywhere between 1-10 million times less space, but it still provides you with most of the
 insights that are useful.
 
-#### Scenario: Aggregating data from logs
+### Scenario: Aggregating data from logs
 
 Imagine you are running a service that sells products to users. A user logs in to your service, they are shown a home
 page and from there they're able to search for desired products. The service keeps track of their activities as they are
@@ -52,7 +52,7 @@ aggregating it becomes much simpler (and we'll see why a bit later). To be able 
 class that will represent each individual record stored in the log file and have the mentioned class implement the
 Comparable interface.
 
-### Try (15 min)
+## Try (15 min)
 
 `UserPageVisit` represents a single record stored in the log file. The class implements the `Comparable` interface to
 enable instances of the class to be sorted. The visits are sorted by `userId` and then by the `page`. Although
@@ -65,7 +65,7 @@ You're not expected to write any new tests.
 **Doneness checklist:**
 - `UserPageVisitTest` tests all pass
 
-### Read (10 min)
+## Read (10 min)
 
 Now that we have defined `UserPageVisit`, we can describe the sorting and aggregation workflow.
 
@@ -104,7 +104,7 @@ following:
 * How does `UserPageVisitAggregator` decide when to create a new `UserPageVisitAggregate` - effectively starting a new
   aggregation.
 
-### Try (5 min)
+## Try (5 min)
 
 `UserPageVisitGrouper` is nearly complete; it just needs the method to sort `UserPageVisit` in ascending order by user
 ID and page as `UserPageVisitAggregator` expects.
