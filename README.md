@@ -1,7 +1,3 @@
-## Comparable and using sort() Pre-work
-
-**GitHub repo:** [ebd-comparators-using-sort-user-page-visit](https://github.com/LambdaSchool/ebd-comparators-using-sort-user-page-visit)
-
 ## Read (5 min)
 
 ### Introduction to data aggregation
