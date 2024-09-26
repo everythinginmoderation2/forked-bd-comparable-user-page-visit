@@ -15,7 +15,40 @@ public class UserPageVisitGrouper {
      */
     public List<UserPageVisit> groupUserPageVisits(List<UserPageVisit> userPageVisits) {
         // PARTICIPANTS: add logic to implement groupUserPageVisits here
+        int comparison = 0;
         List<UserPageVisit> userPageVisitsCopy = new ArrayList<>();
+        if (userPageVisits.size() == 1) userPageVisitsCopy.add(userPageVisits.get(0));
+        for (int i = 0; i < userPageVisits.size() - 1; i++) {
+            UserPageVisit thisVisit = userPageVisits.get(i);
+            UserPageVisit nextVisit = userPageVisits.get(i + 1);
+            int lastVisit = userPageVisits.size();
+            comparison = thisVisit.compareTo(nextVisit);
+            if (userPageVisits.size() == 2) {
+                if (comparison < 0) {
+                    userPageVisitsCopy.add(thisVisit);
+                    userPageVisitsCopy.add(nextVisit);
+                    return userPageVisitsCopy;
+                }
+                if (comparison > 0) {
+                    userPageVisitsCopy.add(nextVisit);
+                    userPageVisitsCopy.add(thisVisit);
+                    return userPageVisitsCopy;
+                }
+                else {
+                    userPageVisitsCopy.add(thisVisit);
+                    userPageVisitsCopy.add(nextVisit);
+                    return userPageVisitsCopy;
+                }
+            }
+
+            if (comparison == 0) return userPageVisitsCopy;
+            if (comparison < 0) {
+                userPageVisitsCopy.add(thisVisit);
+            }
+            if (comparison > 0) {
+                userPageVisitsCopy.add(nextVisit);
+            }
+        }
 
         return userPageVisitsCopy;
     }
