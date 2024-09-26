@@ -89,7 +89,7 @@ class UserPageVisitTest {
     }
 
     @Test
-    public void compareTo_visitsWithSameDifferentUserIds_resultMatchesResultOfCallingEquals() {
+    public void compareTo_visitsWithSameUserDifferentUserIds_resultMatchesResultOfCallingEquals() {
         // GIVEN
         UserPageVisit userPageVisit1 = new UserPageVisit(1L, "home-page", 10);
         UserPageVisit userPageVisit2 = new UserPageVisit(2L, "home-page", 10);
